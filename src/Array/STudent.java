@@ -8,8 +8,9 @@ public class STudent {
             stud2 = new STudent();
             stud3 = new STudent();
             stud4 = new STudent();
+//            STudent.add(stud1);
+//            STudent.add(stud2);
 
         }
-        STudent.add(stud1);
-        STudent.add(stud2);
+
     }
