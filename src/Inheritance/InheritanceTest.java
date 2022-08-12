@@ -9,6 +9,8 @@ public class InheritanceTest {
         Cow cow = new Cow();
         cow.moo();
         cow.eat();
+        WildDog wilddog = new WildDog();
+        wilddog.huntInParks();
 
     }
 }
@@ -18,12 +20,21 @@ class Animal{
     }
 }
 class Dog extends Animal {
-    void bark(){
+    public void bark(){
         System.out.println("Dog bark");
+    }
+    public void eat(){
+        System.out.println("Dog eat");
     }
 }
 class Cow extends Animal {
     void moo(){
         System.out.println("Cow moo");
     }
+}
+class WildDog extends Dog{
+    void huntInParks(){
+        System.out.print("Wild dogs hunt in parks");
+    }
+
 }
