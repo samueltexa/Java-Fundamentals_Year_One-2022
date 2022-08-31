@@ -31,6 +31,7 @@ public class TestInterfaces {
         @Override
         public void sprinkleWater() {
             System.out.println("Sprinkle water in bang_alo bathroom.");
+            System.out.println("The size of the bathroom is " + +size);
 
         }
     }
