@@ -8,6 +8,6 @@ public class ArayList {
         marks.add(76);
         marks.add(54);
         for (int i = 0; i < marks.size(); i++)
-            System.out.print(marks.get(i) + " ");
+            System.out.println(marks.get(i) + " ");
     }
 }
