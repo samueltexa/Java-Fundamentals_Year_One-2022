@@ -1,5 +1,4 @@
 package Gui_Programing;
-import java.awt.*;
 import javax.swing.*;
 
 public class MyFirst_Gui {

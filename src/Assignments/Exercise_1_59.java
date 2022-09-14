@@ -49,7 +49,7 @@ class MyFrame1 extends JFrame implements ActionListener {
 
 public class Exercise_1_59 {
     public static void main(String[] args) {
-        MyFrame frame = new MyFrame();
+        MyFrame1 frame = new MyFrame1();
         frame.setSize(600, 600);
         frame.setVisible(true);
     }
