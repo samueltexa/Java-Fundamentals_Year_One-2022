@@ -4,12 +4,13 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class Exercise_1_60 extends JFrame implements ActionListener{
-    JLabel inLabel = new JLabel("Password");
+    JLabel inLabel = new JLabel("UserName");
     JTextField inText = new JTextField(15);
     JLabel outLabel = new JLabel("Password");
     JTextField outText = new JTextField(15);
-    //constructor
+    JButton btn;
     
+    //constructor
     Exercise_1_60(){
         getContentPane().setLayout(new FlowLayout());
         getContentPane().add(inLabel);
@@ -17,9 +18,12 @@ public class Exercise_1_60 extends JFrame implements ActionListener{
         getContentPane().add(outLabel);
         getContentPane().add(outText);
         inText.addActionListener(this);
+        btn = new JButton("Save");
+        getContentPane().add(btn);
         
     
     }
+    
     @Override
     public void actionPerformed(ActionEvent e) {
         String name = inText.getText();
@@ -28,9 +32,28 @@ public class Exercise_1_60 extends JFrame implements ActionListener{
     }
     public static void main(String[] args){
         Exercise_1_60 frame = new Exercise_1_60();
-        //WindowQuitter quit = new WindowQuitter();
-        //frame.addWindowListener(quit);
-        frame.setSize(600, 600);
+        WindowQuitter quit = new WindowQuitter();
+        frame.addWindowListener(quit);
+        frame.setSize(600, 500);
         frame.setVisible(true);
-    }  
+    } 
+     private void btnActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        if(inLabel.getText().length() == 0){
+             JOptionPane.showMessageDialog(null, "Enter Regno");
+            inText.requestFocus();
+            return;
+        }
+         //if(txtName.getText().length() == 0){
+            JOptionPane.showMessageDialog(null, "ENter Name");
+            //txtName.requestFocus();
+            return;
+        }
+    
+}
+class WindowCloser extends WindowAdapter{
+ @Override
+ public void windowClosing( WindowEvent e ){
+   // what to do for this event   
+ System.exit( 0 );
+ }
 }

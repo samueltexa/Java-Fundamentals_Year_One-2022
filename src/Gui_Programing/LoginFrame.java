@@ -1,6 +1,5 @@
 package Gui_Programing;
 
-import Gui_Programing.DragDropFrame;
 import javax.swing.JOptionPane;
 
 public class LoginFrame extends javax.swing.JFrame {
@@ -96,10 +95,12 @@ public class LoginFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnexitActionPerformed
 
     private void btnloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnloginActionPerformed
-        if(txtUsername.getText().equals("Samuel") && txtpassword.getText().equals("sam")){
+        if(txtUsername.getText().equals("samuel") && txtpassword.getText().equals("sam")){
             new DragDropFrame().Main();
-            this.dispose();
-            
+            this.dispose();    
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Incorct password, Try again.");
         }
         if(txtUsername.getText().length() == 0){
              JOptionPane.showMessageDialog(null, "Enter Username");
@@ -109,7 +110,6 @@ public class LoginFrame extends javax.swing.JFrame {
         if(txtpassword.getText().length() == 0){
              JOptionPane.showMessageDialog(null, "Enter password");
             txtpassword.requestFocus();
-            return;
         }
     }//GEN-LAST:event_btnloginActionPerformed
 
@@ -141,10 +141,8 @@ public class LoginFrame extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new LoginFrame().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new LoginFrame().setVisible(true);
         });
     }
 

@@ -28,126 +28,174 @@ public class DragDropFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        txtRegno = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        txtName = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        lbloopcourseworkmark = new javax.swing.JLabel();
+        txtoopcourseworkmark = new javax.swing.JTextField();
+        lbloopeaxammark = new javax.swing.JLabel();
+        txtoopexammark = new javax.swing.JTextField();
+        btncalculate = new javax.swing.JButton();
+        btnexit = new javax.swing.JButton();
+        btnclear = new javax.swing.JButton();
+        lbloopfinalmark = new javax.swing.JLabel();
+        txtoopfinalmark = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Student Regno System");
 
-        jLabel1.setText("Regno");
+        lbloopcourseworkmark.setText("Oop Coursework Mark");
 
-        jLabel2.setText("Name");
-
-        txtName.addActionListener(new java.awt.event.ActionListener() {
+        txtoopcourseworkmark.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNameActionPerformed(evt);
+                txtoopcourseworkmarkActionPerformed(evt);
             }
         });
 
-        jButton1.setText("Save");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        lbloopeaxammark.setText("Oop Exam Mark");
+
+        txtoopexammark.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                txtoopexammarkActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Exit");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btncalculate.setText("Calculate");
+        btncalculate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btncalculateActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Clear");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnexit.setText("Exit");
+        btnexit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnexitActionPerformed(evt);
             }
         });
+
+        btnclear.setText("Clear");
+        btnclear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnclearActionPerformed(evt);
+            }
+        });
+
+        lbloopfinalmark.setText("Oop Final Mark");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(69, 69, 69)
+                .addComponent(btncalculate)
+                .addGap(75, 75, 75)
+                .addComponent(btnexit)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
+                .addComponent(btnclear)
+                .addGap(30, 30, 30))
+            .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(lbloopeaxammark, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lbloopcourseworkmark, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(lbloopfinalmark, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(50, 50, 50)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtRegno)
-                    .addComponent(txtName, javax.swing.GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE))
+                    .addComponent(txtoopcourseworkmark)
+                    .addComponent(txtoopexammark, javax.swing.GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE)
+                    .addComponent(txtoopfinalmark))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(69, 69, 69)
-                .addComponent(jButton1)
-                .addGap(75, 75, 75)
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
-                .addComponent(jButton3)
-                .addGap(30, 30, 30))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(txtRegno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lbloopcourseworkmark)
+                    .addComponent(txtoopcourseworkmark, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 142, Short.MAX_VALUE)
+                    .addComponent(lbloopeaxammark)
+                    .addComponent(txtoopexammark, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbloopfinalmark, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtoopfinalmark, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(62, 62, 62)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
+                    .addComponent(btncalculate)
+                    .addComponent(btnexit)
+                    .addComponent(btnclear))
                 .addGap(28, 28, 28))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
+    private void txtoopexammarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtoopexammarkActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNameActionPerformed
+    }//GEN-LAST:event_txtoopexammarkActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        txtRegno.setText("");
-        txtName.setText("");
-        txtRegno.requestFocus();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void btnclearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnclearActionPerformed
+        txtoopcourseworkmark.setText("");
+        txtoopexammark.setText("");
+        txtoopcourseworkmark.requestFocus();
+    }//GEN-LAST:event_btnclearActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnexitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexitActionPerformed
         System.exit(0);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnexitActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(txtRegno.getText().length() == 0){
-             JOptionPane.showMessageDialog(null, "Enter Regno");
-            txtRegno.requestFocus();
+    private void btncalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncalculateActionPerformed
+        if(txtoopcourseworkmark.getText().length() == 0){
+             JOptionPane.showMessageDialog(null, "Enter course work mark out of 40.");
+            txtoopcourseworkmark.requestFocus();
             return;
         }
-         if(txtName.getText().length() == 0){
-            JOptionPane.showMessageDialog(null, "ENter Name");
-            txtName.requestFocus();
+         if(txtoopexammark.getText().length() == 0){
+            JOptionPane.showMessageDialog(null, "Enter exam mark out of 60.");
+            txtoopexammark.requestFocus();
             return;
         }
-          JOptionPane.showMessageDialog(null, "Record saved");
-         txtRegno.setText("");
-        txtName.setText("");
-        txtName.requestFocus();
-    }//GEN-LAST:event_jButton1ActionPerformed
+        int cw_mark = 0, exam_mark = 0, final_mark = 0;
+        boolean flag = false;
+        try{
+            cw_mark = Integer.parseInt(txtoopcourseworkmark.getText());
+            flag = true;
+            exam_mark = Integer.parseInt(txtoopexammark.getText());
+            final_mark = cw_mark + exam_mark;
+            txtoopfinalmark.setText(final_mark +"");
+            JOptionPane.showMessageDialog(null, "See your final percentage mark.");
+            
+        
+        }
+        catch(NumberFormatException ex){
+            if(flag == false){
+            JOptionPane.showMessageDialog(null, "Only integers allowed for course work mark, Enter it again.");
+            txtoopcourseworkmark.setText("");
+            txtoopcourseworkmark.requestFocus();
+            return; 
+            }
+            if(flag == false){
+            JOptionPane.showMessageDialog(null, "Only integers allowed for final mark, Enter it again.");
+            txtoopfinalmark.setText("");
+            txtoopfinalmark.requestFocus();
+            return;   
+            
+        }
+        //JOptionPane.showMessageDialog(null, "See your final percentage marks.");
+        txtoopcourseworkmark.setText("");
+        txtoopexammark.setText("");
+        txtoopexammark.requestFocus();
+    }//GEN-LAST:event_btncalculateActionPerformed
+    }
+    
+    private void txtoopcourseworkmarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtoopcourseworkmarkActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtoopcourseworkmarkActionPerformed
 
     /**
-     * @param args the command line arguments
+     * paramargs the command line arguments
      */
     public void Main(){
         /* Set the Nimbus look and feel */
@@ -182,12 +230,14 @@ public class DragDropFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField txtName;
-    private javax.swing.JTextField txtRegno;
+    private javax.swing.JButton btncalculate;
+    private javax.swing.JButton btnclear;
+    private javax.swing.JButton btnexit;
+    private javax.swing.JLabel lbloopcourseworkmark;
+    private javax.swing.JLabel lbloopeaxammark;
+    private javax.swing.JLabel lbloopfinalmark;
+    private javax.swing.JTextField txtoopcourseworkmark;
+    private javax.swing.JTextField txtoopexammark;
+    private javax.swing.JTextField txtoopfinalmark;
     // End of variables declaration//GEN-END:variables
 }
