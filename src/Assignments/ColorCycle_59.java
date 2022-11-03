@@ -6,10 +6,10 @@ import java.awt.event.*;
 import java.awt.Color;
 import java.awt.FlowLayout;
 
-class MyjFrame extends JFrame implements ActionListener {
+class MyFramer extends JFrame implements ActionListener {
     JButton button;
 
-    MyjFrame() {
+    MyFramer() {
         super.setTitle("My Colors");
 
         button = new JButton("COLOR");
@@ -19,6 +19,7 @@ class MyjFrame extends JFrame implements ActionListener {
         button.addActionListener(this);
     }
 
+    @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == button) {
             Color background = getContentPane().getBackground();
@@ -33,15 +34,13 @@ class MyjFrame extends JFrame implements ActionListener {
             } else {
                 getContentPane().setBackground(Color.RED);
             }
-
         }
     }
-
 }
-
-public class Exercise_2_59 {
+public class ColorCycle_59 {
     public static void main(String[] args) {
-        MyjFrame frame = new MyjFrame();
+        MyFramer frame;
+        frame = new MyFramer();
         frame.setSize(600, 600);
         frame.setVisible(true);
     }

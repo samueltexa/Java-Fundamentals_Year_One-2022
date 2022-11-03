@@ -8,10 +8,10 @@ public class Exercise_1_60 extends JFrame implements ActionListener{
     JTextField inText = new JTextField(15);
     JLabel outLabel = new JLabel("Password");
     JTextField outText = new JTextField(15);
-    JButton btn;
     
     //constructor
     Exercise_1_60(){
+        JButton btn;
         getContentPane().setLayout(new FlowLayout());
         getContentPane().add(inLabel);
         getContentPane().add(inText);
@@ -44,16 +44,15 @@ public class Exercise_1_60 extends JFrame implements ActionListener{
             return;
         }
          //if(txtName.getText().length() == 0){
-            JOptionPane.showMessageDialog(null, "ENter Name");
+            JOptionPane.showMessageDialog(null, "Enter Name");
             //txtName.requestFocus();
-            return;
         }
     
 }
 class WindowCloser extends WindowAdapter{
  @Override
- public void windowClosing( WindowEvent e ){
+ public void windowClosing( WindowEvent evt ){
    // what to do for this event   
- System.exit( 0 );
+ System.exit(0);
  }
 }

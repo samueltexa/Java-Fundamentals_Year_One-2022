@@ -29,25 +29,33 @@ class MyFrame1 extends JFrame implements ActionListener {
         blue.addActionListener(this);
     }
 
+    @Override
     public void actionPerformed(ActionEvent e) {
         String clicked = e.getActionCommand();
-        if (clicked.equals("Red")) {
-            getContentPane().setBackground(Color.RED);
-            repaint();
-        } else if (clicked.equals("Green")) {
-            getContentPane().setBackground(Color.GREEN);
-            repaint();
-        } else if (clicked.equals("Blue")) {
-            getContentPane().setBackground(Color.BLUE);
-            repaint();
-        } else if (clicked.equals("Gray")) {
-            getContentPane().setBackground(Color.GRAY);
-            repaint();
+        switch (clicked) {
+            case "Red":
+                getContentPane().setBackground(Color.RED);
+                repaint();
+                break;
+            case "Green":
+                getContentPane().setBackground(Color.GREEN);
+                repaint();
+                break;
+            case "Blue":
+                getContentPane().setBackground(Color.BLUE);
+                repaint();
+                break;
+            case "Gray":
+                getContentPane().setBackground(Color.GRAY);
+                repaint();
+                break;
+            default:
+                break;
         }
     }
 }
 
-public class Exercise_1_59 {
+public class FourButton_59 {
     public static void main(String[] args) {
         MyFrame1 frame = new MyFrame1();
         frame.setSize(600, 600);

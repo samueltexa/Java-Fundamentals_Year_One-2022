@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package Gui_Programing;
-import java.awt.*;
 import javax.swing.*;
 
 /**
@@ -26,7 +25,5 @@ public class Button_Gui extends JFrame {
         gui.setSize(600,600);
         gui.setVisible(true);
     }
-    
-}
     
 }
