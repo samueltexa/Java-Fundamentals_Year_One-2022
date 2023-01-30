@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Databases;
+package Gui_Programing;
 import java.io.*;
 /**
  *
  * @author SAMUEL
  */
-public class LoginFrame extends javax.swing.JFrame {
+public class LoginFrame_1 extends javax.swing.JFrame {
 
     /**
      * Creates new form LoginFrame
      */
-    public LoginFrame() {
+    public LoginFrame_1() {
         initComponents();
         super.setTitle("StudentForm");
     }
