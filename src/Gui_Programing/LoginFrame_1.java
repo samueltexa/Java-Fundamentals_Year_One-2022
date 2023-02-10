@@ -36,7 +36,7 @@ public class LoginFrame_1 extends javax.swing.JFrame {
         btnexit = new javax.swing.JButton();
         btnoutput = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         lblname.setText("Name");
 
