@@ -38,9 +38,9 @@ public class OnlyBSE {
     public OnlyBSE(){
         con = null;
         st = null;
-        cs = "jdbc:mysql://localhost:3306/setwo";
-        user = "samuel";
-        password = "amuelss1!";
+        cs = "jdbc:mysql://localhost:3306/inventorydatabase";
+        user = "root";
+        password = "";
     }
 
     public void Main() throws FileNotFoundException, DocumentException, Exception{
@@ -57,7 +57,7 @@ public class OnlyBSE {
             Class.forName("com.mysql.jdbc.Driver"); //register the driver
             con = DriverManager.getConnection(cs, user, password);
             st = con.createStatement();
-            query = "select * from students";//exwcute 
+            query = "select * from user";//exwcute 
             ResultSet rs = st.executeQuery(query);
             while(rs.next()){    
                 table.addCell(rs.getString("RegNo"));
