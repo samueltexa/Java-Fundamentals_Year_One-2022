@@ -1,58 +1,20 @@
 package INterfaces;
-
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 public class TestInterfaces {
-    public static void main(String[] args){
-        Bang_aloHouse bang = new Bang_aloHouse();
-        bang.open();
-        bang.sprinkleWater();
-        StorageHouse storage = new StorageHouse();
-        storage.open();
-        storage.sprinkleWater();
-        HutHouse hut =  new HutHouse();
-        hut.open();
-    }
-    }
-    abstract class House{
-        abstract void open();
-    }
-    //create bathroom interface
-    interface Bathroom{
-        final double size = 10.0;
-        void sprinkleWater();
-    }
-    class Bang_aloHouse extends House implements Bathroom{
-
-        @Override
-        void open() {
-            System.out.println("Open bang-alo house.");
-
-        }
-
-        @Override
-        public void sprinkleWater() {
-            System.out.println("Sprinkle water in bang_alo bathroom.");
-            System.out.println("The size of the bathroom is " + +size);
-
-        }
-    }
-    class StorageHouse extends House implements Bathroom{
-
-    @Override
-    void open() {
-        System.out.println("Open bang-alo house.");
-
-        }
-
-    @Override
-    public void sprinkleWater() {
-        System.out.println("Sprinkle water in bang_alo bathroom.");
-
-        }
-    }
-    class HutHouse extends House{
-
-        @Override
-        void open() {
-            System.out.println("Opens hut house.");
-        }
+    static String name1;
+    static String name2;
+    static InputStreamReader in = new InputStreamReader(System.in);
+    static BufferedReader buf = new BufferedReader(in);
+//    BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
+public static void main(String[] args) throws IOException {
+    System.out.print("Enter your first name: ");
+    name1 = buf.readLine();
+    System.out.print("Your first name is: "+name1);
+    System.out.print("\nEnter your second name: ");
+    name2 = buf.readLine();
+    System.out.print("Your second name is: "+name2);
+    System.out.println("\nYour full name is: "+name1+" "+name2);
+}
     }

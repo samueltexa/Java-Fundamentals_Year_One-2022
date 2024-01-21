@@ -7,7 +7,6 @@ public class ArayList {
         marks.add(90);
         marks.add(76);
         marks.add(54);
-        for (int i = 0; i < marks.size(); i++)
-            System.out.println(marks.get(i) + " ");
+        for (Integer mark : marks) System.out.println(mark);
     }
 }

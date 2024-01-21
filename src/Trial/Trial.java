@@ -1,22 +1,16 @@
 package Trial;
+import java.io.IOException;
 
-public class Trial {
-    static void LinearSearch(){
-    int[] array = new int[]{2,4,5,6,7,8};
-    int key;
-    key = array[5];
-    
-    for(int i =0; i < array.length;i ++){
-        if(array[i] == key)
-                System.out.println("Element found.");
-        
-    else
-        System.out.println("Element not found");
+public class Trial extends IOException {
+    static int key;
+    static int[] array = new int[]{1,2,3};
+    public static void linearSearch(){
+            if (key == array[2]) {
+                System.out.println(key);
+            } else System.out.println(key);
+
     }
-    
-    }   
-    
     public static void main(String[] args){
-        LinearSearch();
-    } 
+        linearSearch();
+    }
 }
